@@ -1,0 +1,37 @@
+/* GLOBAL */
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    margin: 0%;
+    padding: 0;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 64px;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+}
+
+.nav--logo {
+    margin-left: 24px;
+    height: 32px;
+}
+
+.nav--logo-img {
+    height: 64px;
+    margin-right: -70%;
+}
+
+nav h3 {
+    font-size: 30px;
+}
+
