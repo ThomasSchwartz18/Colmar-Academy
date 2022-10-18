@@ -6,7 +6,7 @@ body {
     align-content: center;
     justify-content: center;
     text-align: center;
-    background-color: gray;
+    /* background-color: gray; */
     margin: 0%;
     padding: 0;
     font-family: 'Inter', sans-serif;
@@ -48,9 +48,45 @@ nav {
 
 .links {
     display: flex;
+    margin-right: 24px;
 }
 
 .nav--cta {
     margin: 0 16px 0 0;
     color: black;
+}
+
+/* START */
+.start {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+}
+
+.start--banner {
+    width: 60%;
+    margin: 96px 24px 32px 24px;
+}
+
+.start--column2 {
+    text-align: left;
+}
+
+.start--heading1 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 45px;
+}
+
+.start--sub-heading {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.562);
+}
+
+.start--button {
+    margin: 8px 0 8px 0;
+    font-size: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.475);
+    color: white;
 }
