@@ -1,4 +1,6 @@
 /* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body {
     display: flex;
     align-content: center;
@@ -7,6 +9,8 @@ body {
     background-color: gray;
     margin: 0%;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 /* NAVBAR */
@@ -24,14 +28,17 @@ nav {
 .nav--logo {
     margin-left: 24px;
     height: 32px;
+    font-size: 30px;
+    color: gray;
+}
+
+.nav--logo span {
+    color: black;
+    font-weight: 600;
 }
 
 .nav--logo-img {
     height: 64px;
     margin-right: -70%;
-}
-
-nav h3 {
-    font-size: 30px;
 }
 
