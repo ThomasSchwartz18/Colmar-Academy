@@ -212,57 +212,84 @@ nav {
 
 /* THESIS */
 .thesis {
-    margin: 0;
-    text-align: center;
-    justify-content: center;
-    padding: 32px 0 32px 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
     background-color: whitesmoke;
 }
 
+.thesis--left {
+    padding-left: 24px;
+    width: 70%;
+}
+
 .thesis--heading1 {
-    margin-bottom: 32px;
-    color: rgba(0, 0, 0, 0.7);
     font-size: 45px;
-}
-
-.thesis-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.thesis--video {
-    width: 60%;
-    border: 5px solid rgba(178, 178, 178, 0.745);
-}
-
-/* thesis branch */
-.thesis-container-branch {
-    width: 40%;
-    margin-left: 24px;
-}
-
-.branch--container {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 24px;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.branch--container div {
-    text-align: left;
+.thesis--quote {
+    font-size: 25px;
+    color: rgba(178, 178, 178, 0.745);
 }
 
-.branch--container:hover {
+.thesis--vid {
+    margin: 32px 0 32px 0;
+    width: 96%;
+}
+
+/* other thesis */
+.thesis--other {
+    width: 40%;
+    border-left: 1px solid rgba(178, 178, 178, 0.745);
+    /* margin-left: 24px; */
+}
+
+.other--container {
+    display: flex;
+    align-items: center;
+}
+
+.other--container a {
+    text-decoration: none;
+}
+
+.other--element h4 {
+    font-size: 20px;
+}
+
+.other--container:hover {
     background-color: rgba(178, 178, 178, 0.745);
-    transition: background-color 500ms linear 0ms;
+    transition: background-color 500ms linear 200ms;
 }
 
-.branch--img {
+.other--img {
     width: 35%;
+    height: auto;
     margin: 16px;
 }
 
-.branch--heading1 {
-    font-size: 20px;
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: whitesmoke;
+    border-top: 3px solid rgba(178, 178, 178, 0.745);
+}
+
+.footer--copyright {
+    color: rgba(178, 178, 178, 0.745);
+}
+
+.footer--terms-privacy {
+    display: flex;
+}
+
+.footer--link {
+    padding: 5px;
+    text-decoration: none;
+    color: rgba(178, 178, 178, 0.745);
 }
