@@ -102,18 +102,34 @@ nav {
 
 .news--left {
     padding-left: 24px;
+    width: 70%;
+}
+
+.news--heading1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.news--quote {
+    font-size: 25px;
+    color: rgba(178, 178, 178, 0.745);
+}
+
+.news--quote-tag {
+    margin-bottom: 32px;
 }
 
 .news--img {
     margin: 32px 0 32px 0;
-    width: 86%;
+    width: 96%;
 }
 
 /* current events */
 .news--current-events {
     width: 40%;
     border-left: 1px solid rgba(178, 178, 178, 0.745);
-    margin-left: 24px;
+    /* margin-left: 24px; */
 }
 
 .ce--container {
