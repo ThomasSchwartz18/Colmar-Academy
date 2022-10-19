@@ -143,6 +143,10 @@ nav {
     text-decoration: none;
 }
 
+.ce--element h4 {
+    font-size: 20px;
+}
+
 .ce--container:hover {
     background-color: rgba(178, 178, 178, 0.745);
     transition: background-color 500ms linear 200ms;
@@ -204,4 +208,61 @@ nav {
 
 .cp--img {
     width: 100%
+}
+
+/* THESIS */
+.thesis {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    padding: 32px 0 32px 24px;
+    background-color: whitesmoke;
+}
+
+.thesis--heading1 {
+    margin-bottom: 32px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 45px;
+}
+
+.thesis-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thesis--video {
+    width: 60%;
+    border: 5px solid rgba(178, 178, 178, 0.745);
+}
+
+/* thesis branch */
+.thesis-container-branch {
+    width: 40%;
+    margin-left: 24px;
+}
+
+.branch--container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.branch--container div {
+    text-align: left;
+}
+
+.branch--container:hover {
+    background-color: rgba(178, 178, 178, 0.745);
+    transition: background-color 500ms linear 0ms;
+}
+
+.branch--img {
+    width: 35%;
+    margin: 16px;
+}
+
+.branch--heading1 {
+    font-size: 20px;
 }
