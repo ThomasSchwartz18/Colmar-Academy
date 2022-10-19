@@ -137,6 +137,10 @@ nav {
     align-items: center;
 }
 
+.ce--container a {
+    text-decoration: none;
+}
+
 .ce--container:hover {
     background-color: rgba(178, 178, 178, 0.745);
     transition: background-color 500ms linear 200ms;
@@ -144,5 +148,6 @@ nav {
 
 .ce--img {
     width: 35%;
+    height: auto;
     margin: 16px;
 }
