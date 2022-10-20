@@ -12,6 +12,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
+    background-color: whitesmoke;
 }
 
 /* NAVBAR */
@@ -24,6 +25,18 @@ nav {
     background-color: white;
     margin: 0;
     position: fixed;
+}
+
+/* mobile-nav */
+.nav--mobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.nav--mobile img {
+    height: 40px;
 }
 
 .nav--logo-img {
@@ -89,7 +102,7 @@ nav {
     padding: 16px 0 16px 0;
     font-size: 20px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.475);
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
 }
 
@@ -98,7 +111,7 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }
 
 .news--left {
@@ -158,6 +171,7 @@ nav {
     margin: 16px;
 }
 
+
 /* LEARNING */
 .learning {
     text-align: center;
@@ -190,8 +204,7 @@ nav {
 
 .cp--container:hover {
     background-color: rgba(178, 178, 178, 0.745);
-    transition: background-color 500ms linear 0ms, box-shadow 500ms linear 0ms;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7);
+    transition: background-color 500ms linear 0ms,;
     color: black;
 }
 
@@ -212,10 +225,19 @@ nav {
 
 /* THESIS */
 .thesis {
+    background-color: whitesmoke;
+}
+
+.thesis--heading1 {
+    margin: 32px 0 16px 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 45px;
+}
+
+.thesis--body {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: whitesmoke;
 }
 
 .thesis--left {
@@ -223,7 +245,7 @@ nav {
     width: 70%;
 }
 
-.thesis--heading1 {
+.thesis--heading2 {
     font-size: 45px;
     font-weight: 600;
     margin-bottom: 24px;
@@ -292,4 +314,160 @@ nav {
     padding: 5px;
     text-decoration: none;
     color: rgba(178, 178, 178, 0.745);
+}
+
+/* SIZING ADJUSTMENTS */
+@media only screen and (min-width: 650px) {
+    .nav--mobile{
+        display: none;
+    }
+
+    .ce--mobile-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    /* NAV */
+    .logo {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    /* START */
+    .start {
+        display: block;
+        padding: 0;
+    }
+
+    .start--banner {
+        width: 100%;
+        margin: 64px 0 0 0;
+    }
+
+    .start--heading1 {
+        margin: 32px auto 32px auto;
+    }
+
+    .start--button {
+        width: 90%;
+        margin: 24px 0 32px 0;
+    }
+
+    /* NEWS */
+    .news--left {
+        display: none;
+    }
+
+    .news--current-events {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .ce--container {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .ce--img {
+        display: none;
+    }
+
+    .ce--mobile-img {
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .ce--element {
+        width: 100%;
+        padding-left: 16px;
+    }
+
+    /* LEARNING */
+    .learning {
+        text-align: center;
+        padding: 32px 10px 0 10px;
+        background-color: whitesmoke;
+        border-top: 1px solid rgba(178, 178, 178, 0.745);
+    }
+    
+    .learning--heading1 {
+        /* margin-bottom: 16px; */
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 45px;
+    }
+    
+    .learning--career-paths {
+        display: block;
+        /* margin-bottom: 32px; */
+        margin-top: -20px;
+    }
+    
+    .cp--container { 
+        text-align: left;
+        text-decoration: none;
+    }
+    
+    .cp--heading1 {
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(178, 178, 178, 0.745);
+        padding: 16px 0 24px 16px;
+        margin-bottom: 8px;
+        font-size: 35px;
+        height: 45px;
+        color: rgba(0, 0, 0, 0.583);
+        font-weight: lighter
+    }
+    
+    .cp--element {
+        display: none;
+    }
+    
+    .cp--img {
+        display: none;
+    }
+
+    /* THESIS */
+    .thesis {
+        display: block;
+        text-align: center;
+        background-color: whitesmoke;
+        border-top: 1px solid rgba(178, 178, 178, 0.745);
+    }
+
+    .thesis--body {
+        display: block;
+    }
+
+    .thesis--other {
+        display: none;
+    }
+
+    .thesis--left h1,
+    .thesis--left p {
+        display: none;
+    }
+
+    .thesis--left {
+        padding: 0;
+        width: 100%;
+    }
+
+    .thesis--vid {
+        margin: 0 0 24px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .footer--terms-privacy {
+        display: none;
+    }
 }
