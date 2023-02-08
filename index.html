@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colmar Academy</title>
+
+    <!-- link css -->
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="icon" href="./resources/images/ic-logo.svg" />
   </head>
@@ -26,16 +28,19 @@
         <p><img href="#" src="resources/images/ic-logo.svg" /></p>
         <p><img href="#" src="resources/images/ic-on-campus.svg" /></p>
         <p><img href="#" src="resources/images/ic-online.svg" /></p>
-        <p><img href="#" src="resources/images/ic-login.svg" /></p>
+        <p>
+          <a href="Login.html"><img src="resources/images/ic-login.svg" /></a>
+        </p>
       </div>
 
+      <!-- only viewable desktop -->
       <div class="links">
         <p><a class="nav--cta" href="#">On Campus</a></p>
         <p><a class="nav--cta" href="#">Online</a></p>
         <p><a class="nav--cta" href="#">Companies</a></p>
-        <p><a class="nav--cta" href="#">Sign In</a></p>
+        <p><a class="nav--cta" href="Login.html">Sign In</a></p>
       </div>
-    </nav>
+    </nav>  
 
     <div class="start">
       <img class="start--banner" src="resources/images/banner.jpg" alt="" />
@@ -49,7 +54,7 @@
           Join many others in discovering <br />
           and gaining new skills.
         </p>
-        <p><button class="start--button" href="#">Start Here!</button></p>
+        <button class="start--button">Start Here!</button>
       </div>
     </div>
 
@@ -215,7 +220,8 @@
           <video
             class="thesis--vid"
             src="resources/videos/thesis.mp4"
-            controls
+            autoplay
+            loop
           ></video>
           <h1 class="thesis--heading2">Reimagine Urban</h1>
           <p class="thesis--quote">
